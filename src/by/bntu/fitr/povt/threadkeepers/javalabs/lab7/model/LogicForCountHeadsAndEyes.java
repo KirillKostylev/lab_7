@@ -1,13 +1,13 @@
 package by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model;
 
 public class LogicForCountHeadsAndEyes {
-    public static final int FIRST_PERIOD = 200;
-    public static final int NUMBER_OF_THE_HEADS_AT_THE_BEGINNING = 3;
-    public static final int NUMBER_OF_HEADS_IN_THE_FIRST_PERIOD = 3;
-    public static final int NUMBER_OF_HEADS_IN_THE_SECOND_PERIOD = 2;
-    public static final int NUMBER_OF_HEADS_IN_THE_THIRD_PERIOD = 1;
-    public static final int SECOND_PERIOD = 300;
-    public static final int NUMBER_OF_DRAGON_EYES = 2;
+    private static final int FIRST_PERIOD = 200;
+    private static final int NUMBER_OF_THE_HEADS_AT_THE_BEGINNING = 3;
+    private static final int NUMBER_OF_HEADS_IN_THE_FIRST_PERIOD = 3;
+    private static final int NUMBER_OF_HEADS_IN_THE_SECOND_PERIOD = 2;
+    private static final int NUMBER_OF_HEADS_IN_THE_THIRD_PERIOD = 1;
+    private static final int SECOND_PERIOD = 300;
+    private static final int NUMBER_OF_DRAGON_EYES = 2;
 
     public static int findTheNumberOfHeads(int years) {
         int heads;

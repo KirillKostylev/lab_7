@@ -18,15 +18,15 @@ public class LogicTheGreatest {
         return ans;
     }
 
-    public static double findMaxNumber(double a, double b, double c) {
+    private static double findMaxNumber(double a, double b, double c) {
         return maxNumber(maxNumber(a, b), c);
     }
 
-    public static double maxNumber(double a, double b) {
+    private static double maxNumber(double a, double b) {
         return (a > b) ? a : b;
     }
 
-    public static boolean isEquals(double a, double b) {
+    private static boolean isEquals(double a, double b) {
         return a == b;
     }
 
