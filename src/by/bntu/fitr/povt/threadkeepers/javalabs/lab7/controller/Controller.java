@@ -1,10 +1,7 @@
 package by.bntu.fitr.povt.threadkeepers.javalabs.lab7.controller;
 
 
-import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model.LogicForCountHeadsAndEyes;
-import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model.LogicForDice;
-import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model.LogicForMoodSensor;
-import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model.LogicTheGreatest;
+import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model.*;
 import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.tools.UserInput;
 import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.view.View;
 
@@ -27,6 +24,23 @@ class Controller {
                 View.print("Your mood now:\n" + LogicForMoodSensor.getMood());
             case 4:
                 View.print("The number of the dice: " + LogicForDice.rollDice());
+            case 5:
+                char letter = UserInput.inputChar("Input a letter: " +
+                        "");
+                View.println("Is letter vowel: ");
+                View.println("" + LogicForVowelChecker.arrayChecker(letter));
+                View.println("" + LogicForVowelChecker.arrayListChecker(letter));
+                View.println("" + LogicForVowelChecker.hashSetChecker(letter));
+                View.println("" + LogicForVowelChecker.ifElseChecker1(letter));
+                View.println("" + LogicForVowelChecker.ifElseChecker2(letter));
+                View.println("" + LogicForVowelChecker.ifElseChecker3(letter));
+                View.println("" + LogicForVowelChecker.ifElseChecker4(letter));
+                View.println("" + LogicForVowelChecker.linkedListChecker(letter));
+                View.println("" + LogicForVowelChecker.simpleChecker(letter));
+                View.println("" + LogicForVowelChecker.switchChecker(letter));
+                View.println("" + LogicForVowelChecker.ternarChecker(letter));
+
+
         }
     }
 }
