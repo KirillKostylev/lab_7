@@ -2,6 +2,7 @@ package by.bntu.fitr.povt.threadkeepers.javalabs.lab7.controller;
 
 
 import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model.LogicForCountHeadsAndEyes;
+import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model.LogicTheGreatest;
 import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.tools.UserInput;
 import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.view.View;
 
@@ -16,9 +17,10 @@ public class Controller {
                         + '\n');
                 break;
             case 2:
-                double num1 = UserInput.inputDoubleData("Input the first number ");
-                double num2 = UserInput.inputDoubleData("Input the second number ");
-                double num3 = UserInput.inputDoubleData("Input the third number ");
+                double a = UserInput.inputDoubleData("Input the first number ");
+                double b = UserInput.inputDoubleData("Input the second number ");
+                double c = UserInput.inputDoubleData("Input the third number ");
+               View.print(LogicTheGreatest.theGreatest(a, b, c));
 
         }
     }
