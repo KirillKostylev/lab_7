@@ -7,7 +7,7 @@ public class LogicForMoodSensor {
     private static final int NUMBER_OF_MOODS = 5;
 
     public static String getMood() {
-        int moodNumber = new Random().nextInt(NUMBER_OF_MOODS-1) + 1;
+        int moodNumber = new Random().nextInt(NUMBER_OF_MOODS - 1) + 1;
         String mood = "";
         switch (moodNumber) {
             case 1:

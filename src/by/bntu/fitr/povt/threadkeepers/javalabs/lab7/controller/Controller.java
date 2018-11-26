@@ -20,10 +20,13 @@ class Controller {
                 double b = UserInput.inputDoubleData("Input the second number ");
                 double c = UserInput.inputDoubleData("Input the third number ");
                 View.print(LogicTheGreatest.theGreatest(a, b, c));
+                break;
             case 3:
                 View.print("Your mood now:\n" + LogicForMoodSensor.getMood());
+                break;
             case 4:
                 View.print("The number of the dice: " + LogicForDice.rollDice());
+                break;
             case 5:
                 char letter = UserInput.inputChar("Input a letter: " +
                         "");
