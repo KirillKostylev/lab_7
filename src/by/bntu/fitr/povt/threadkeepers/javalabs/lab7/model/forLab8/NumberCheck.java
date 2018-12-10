@@ -1,7 +1,17 @@
 package by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model.forLab8;
 
-public class RepeatNumberCheck {
-    public static boolean checkNumber(int number) {
+public class NumberCheck {
+
+    public static int countNumbersInNumber(int number) {
+        int countNumber = 0;
+        while (number >= 1) {
+            countNumber++;
+            number /= 10;
+        }
+        return countNumber;
+    }
+
+    public static boolean checkNumberForRepeat(int number) {
         int counter = 0;
         int numberCopy1 = number;
 

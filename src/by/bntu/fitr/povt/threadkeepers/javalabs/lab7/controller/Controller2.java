@@ -1,7 +1,6 @@
 package by.bntu.fitr.povt.threadkeepers.javalabs.lab7.controller;
 
-import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model.forLab8.CountingNumbers;
-import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model.forLab8.RepeatNumberCheck;
+import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model.forLab8.NumberCheck;
 import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.tools.UserInput;
 import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.view.View;
 
@@ -11,11 +10,11 @@ public class Controller2 {
         switch (task) {
             case 1:
                 int number = UserInput.inputIntegerPositiveData("Input a natural number: ");
-                View.print("Numbers in number "+ number + " = "+ CountingNumbers.count(number));
+                View.print("Numbers in number "+ number + " = "+ NumberCheck.countNumbersInNumber(number));
                 break;
             case 2:
                 int number2 = UserInput.inputIntegerPositiveData("Input a natural number: ");
-                View.print(number2 + " has repeating numbers: "+ RepeatNumberCheck.checkNumber(number2));
+                View.print(number2 + " has repeating numbers: "+ NumberCheck.checkNumberForRepeat(number2));
                 break;
         }
 
