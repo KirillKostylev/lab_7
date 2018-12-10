@@ -19,10 +19,10 @@ public class LogicTheGreatest {
     }
 
     private static double findMaxNumber(double a, double b, double c) {
-        return maxNumber(maxNumber(a, b), c);
+        return findMaxNumber(findMaxNumber(a, b), c);
     }
 
-    private static double maxNumber(double a, double b) {
+        private static double findMaxNumber(double a, double b) {
         return (a > b) ? a : b;
     }
 
