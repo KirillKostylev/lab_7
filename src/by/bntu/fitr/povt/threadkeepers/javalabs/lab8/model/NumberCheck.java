@@ -35,4 +35,27 @@ public class NumberCheck {
         }
         return counter > 1;
     }
+
+    public static boolean palindromeCheck(int number) {
+        int firstNumber = number;
+        int secondNumber = 0;
+        while (firstNumber >= 1) {
+            int tempNumeral = firstNumber % 10;
+            secondNumber *= 10;
+            secondNumber += tempNumeral;
+
+            firstNumber /= 10;
+        }
+        return number == secondNumber;
+    }
+
+    public static int findMaxNumeralInNumber(int number) {
+        int maxNumeral = number % 10;
+        while (number >= 1) {
+            number /= 10;
+            int tempNumeral = number % 10;
+            maxNumeral = (maxNumeral > tempNumeral) ? maxNumeral : tempNumeral;
+        }
+        return maxNumeral;
+    }
 }
