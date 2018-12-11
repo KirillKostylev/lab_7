@@ -1,0 +1,9 @@
+package by.bntu.fitr.povt.threadkeepers.javalabs.lab8.controller;
+
+public class Main {
+    public static void main(String[] args) {
+
+        //Controller.execute();
+        Controller.execute();
+    }
+}
