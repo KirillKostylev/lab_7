@@ -4,7 +4,6 @@ package by.bntu.fitr.povt.threadkeepers.javalabs.lab7.controller;
 import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.model.*;
 import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.tools.UserInput;
 import by.bntu.fitr.povt.threadkeepers.javalabs.lab7.view.View;
-import sun.rmi.runtime.Log;
 
 class Controller {
     static void execute() {
